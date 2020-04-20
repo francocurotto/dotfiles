@@ -6,6 +6,9 @@ ln -s $HOME/.dotfiles/tmux.conf $HOME/.tmux.conf
 # install inputrc config file
 ln -s $HOME/.dotfiles/inputrc $HOME/.inputrc
 
+# install mutt config file
+ln -s $HOME/.dotfiles/muttrc $HOME/.muttrc
+
 # install bash configuration file. Intead of doing a ln -s
 # we opt to add source into a existing .bashrc given by the
 # distribution

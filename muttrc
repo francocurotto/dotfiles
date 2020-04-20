@@ -1,0 +1,12 @@
+set folder = "imaps://francocurotto@gmail.com@imap.gmail.com:993"
+set smtp_url = "smtp://francocurotto@gmail.com@smpt.gmail.com:587"
+
+set from = "francocurotto@gmail.com"
+set realname = "Franco Curotto"
+
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "Drafts"
+
+mailboxes =INBOX =Sent =Trash =Drafts
