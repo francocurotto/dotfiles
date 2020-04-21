@@ -1,12 +1,24 @@
+# connection information
 set folder = "imaps://francocurotto@gmail.com@imap.gmail.com:993"
 set smtp_url = "smtp://francocurotto@gmail.com@smpt.gmail.com:587"
 
+# Personal information
 set from = "francocurotto@gmail.com"
 set realname = "Franco Curotto"
 
+# setup mailboxes
 set spoolfile = "+INBOX"
 set record = "+Sent"
 set trash = "+Trash"
 set postponed = "Drafts"
-
 mailboxes =INBOX =Sent =Trash =Drafts
+
+# reverse mail order
+set sort = threads
+set sort_aux = last-date-received
+
+# TODO
+# fix reverse mail order
+# offline email
+# save password
+# smooth scrolling
