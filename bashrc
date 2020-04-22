@@ -1,3 +1,6 @@
+### Aliases
+alias e=exit
+
 ### nnn configutation
 n ()
 {
