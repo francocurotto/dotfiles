@@ -1,0 +1,2 @@
+(gtk_accel_path "<Actions>/DirViewActions/New Empty Document" "<Primary><Shift>m")
+(gtk_accel_path "<Actions>/DirViewActions/OpenInTerminal" "<Alt>t")

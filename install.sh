@@ -9,6 +9,10 @@ ln -s $HOME/.dotfiles/inputrc $HOME/.inputrc
 # install mutt config file
 ln -s $HOME/.dotfiles/muttrc $HOME/.muttrc
 
+# install nemo shortcut file
+mkdir -p $HOME/.gnome2/accels
+ln -s $HOME/.dotfiles/nemo $HOME/.gnome2/accels
+
 # install bash configuration file. Intead of doing a ln -s
 # we opt to add source into a existing .bashrc given by the
 # distribution
