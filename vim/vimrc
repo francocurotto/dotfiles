@@ -1,0 +1,127 @@
+""""""""""""""
+" Remappings "
+""""""""""""""
+" remap up and down to be wrapped-line sensitive 
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up> gk
+vnoremap <Down> gj
+vnoremap <Up> gk
+inoremap <Down> <C-o>gj
+inoremap <Up> <C-o>gk
+
+" use space to go to command mode
+nnoremap <Space> :
+
+" use enter to add new blank lines
+nnoremap <CR> o<Esc>
+
+" use <C-J> for leaving insert mode
+inoremap <C-J> <Esc>
+vnoremap <C-J> <Esc>
+
+"""""""""""
+" Visuals "
+"""""""""""
+" set color scheme
+syntax on
+colorscheme torte
+
+" display line number
+set number
+
+" wrap by line
+set wrap
+set linebreak
+
+" set the color column (maximum line length visual)
+set colorcolumn=80
+
+" show partially written commands
+set showcmd
+
+" set 5 lines to the cursor when moving vertically
+set so=5
+
+" change cursor to line in insert mode
+if has("autocmd")
+  au VimEnter,InsertLeave * silent execute '!echo -ne "\e[1 q"' | redraw!
+  au InsertEnter,InsertChange *
+    \ if v:insertmode == 'i' | 
+    \   silent execute '!echo -ne "\e[5 q"' | redraw! |
+    \ elseif v:insertmode == 'r' |
+    \   silent execute '!echo -ne "\e[3 q"' | redraw! |
+    \ endif
+  au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!
+endif
+
+" underline spelling mistakes
+hi clear SpellBad
+hi clear SpellCap
+hi SpellBad cterm=underline ctermfg=red
+hi SpellCap cterm=underline ctermfg=blue
+
+" remove delay when switching to normal mode
+set ttimeout
+set ttimeoutlen=1
+set listchars=tab:>-,trail:~,extends:>,precedes:<,space:.
+set ttyfast
+
+"""""""""""""
+" Behaviour "
+"""""""""""""
+" use system clipboard as default
+set clipboard=unnamedplus
+
+" bash style autocomplete
+set wildmode=longest,list 
+
+" set working directory to the current file
+if @% != ""
+    cd %:h
+endif
+
+" enable mouse in terminal
+set mouse=a
+
+"""""""""""""""
+" Indentation "
+"""""""""""""""
+" handle indenting with 4 spaces
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" auto indent new lines
+set autoindent
+
+"""""""""""""
+" Searching "
+"""""""""""""
+" Ignore case when searching
+set ignorecase
+" Be case sensitive if the search word contains uppercase
+set smartcase
+
+" Highlight search results
+set hlsearch
+" In search, move the cursor while typing
+set incsearch
+
+"""""""""""""""""
+" Miscellaneous "
+"""""""""""""""""
+" Set filetype to tex for all .tex files (no plaintext, context etc.)
+let g:tex_flavor='latex'
+
+" Disable default ftplugins
+autocmd BufReadPre,BufNewFile * let b:did_ftplugin = 1
+
+" Activate filetype specific plugins
+filetype plugin on
+
+" If file is .txt use markdown syntax highlight
+autocmd BufNewFile,BufRead *.txt set syntax=markdown

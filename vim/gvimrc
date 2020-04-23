@@ -1,0 +1,9 @@
+" Remove toolbar
+set guioptions-=T
+
+" set different color scheme
+colorscheme desert
+
+" set spelling mistake highlight
+hi SpellBad gui=undercurl
+hi SpellCap gui=undercurl 

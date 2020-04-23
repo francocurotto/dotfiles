@@ -1,5 +1,8 @@
 #/!bin/bash
 
+# install vim config folder
+ln -s $HOME/.dotfiles/vim $HOME/.vim
+
 # install tmux config file
 ln -s $HOME/.dotfiles/tmux.conf $HOME/.tmux.conf
 
