@@ -14,8 +14,12 @@ set postponed = "Drafts"
 mailboxes =INBOX =Sent =Trash =Drafts
 
 # reverse mail order
+set sort_aux = last-date-received       
 set sort = threads
-set sort_aux = last-date-received
+
+# smooth scrolling
+set menu_scroll
+set pager_index_lines = 6
 
 # TODO
 # fix reverse mail order
