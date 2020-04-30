@@ -23,6 +23,6 @@ set pager_index_lines = 6
 
 # TODO
 # fix reverse mail order
+# fix menu scrolling offset
 # offline email
 # save password
-# smooth scrolling
