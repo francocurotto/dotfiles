@@ -1,5 +1,6 @@
 ### Aliases
 alias e=exit
+alias r=reset
 
 ### nnn configutation
 n ()
