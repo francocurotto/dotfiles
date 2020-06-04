@@ -13,5 +13,6 @@ command Subfigure :read $HOME/.vim/ftplugin/tex/subfigure.tex|normal j$h
 " TikZ
 command Node :read $HOME/.vim/ftplugin/tex/node.tex|normal f[
 " Beamer
+command Presentation :read $HOME/.vim/ftplugin/tex/presentation.tex|normal kdd
 command Frame :read $HOME/.vim/ftplugin/tex/frame.tex|normal $h
 command Columns :read $HOME/.vim/ftplugin/tex/columns.tex|normal jf{
