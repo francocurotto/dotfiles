@@ -1,6 +1,7 @@
 ### Aliases
 alias e=exit
 alias r=reset
+alias t=tmux
 
 ### nnn configutation
 n ()

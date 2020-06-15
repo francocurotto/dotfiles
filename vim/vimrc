@@ -43,11 +43,8 @@ set breakindentopt=sbr
 " I use a unicode curly array with a <backslash><space>
 set showbreak=↪>\
 
-" when changing to nowrap, use smooth side scroll
-set sidescroll=1
-
 " set the color column (maximum line length visual)
-set colorcolumn=80
+set colorcolumn=63
 
 " show partially written commands
 set showcmd
