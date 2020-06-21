@@ -1,5 +1,5 @@
 ### Aliases
-alias e=exit
+alias q=exit
 alias r=reset
 alias t=tmux
 
