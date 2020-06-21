@@ -64,17 +64,17 @@ if has("autocmd")
   au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!
 endif
 
-" underline spelling mistakes
-hi clear SpellBad
-hi clear SpellCap
-hi SpellBad cterm=underline ctermfg=red
-hi SpellCap cterm=underline ctermfg=blue
-
 " remove delay when switching to normal mode
 set ttimeout
 set ttimeoutlen=1
 set listchars=tab:>-,trail:~,extends:>,precedes:<,space:.
 set ttyfast
+
+" underline spelling mistakes
+hi clear SpellBad
+hi clear SpellCap
+hi SpellBad cterm=underline ctermfg=red
+hi SpellCap cterm=underline ctermfg=blue
 
 """""""""""""
 " Behaviour "
