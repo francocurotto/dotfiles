@@ -1,6 +1,7 @@
 ### Aliases
 alias q=exit
 alias r=reset
+alias v=vim
 alias t=tmux
 
 ### nnn configutation

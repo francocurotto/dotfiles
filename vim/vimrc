@@ -37,20 +37,34 @@ set number
 set wrap
 set linebreak
 
-" make linebreaks nicer
-set breakindent
-set breakindentopt=sbr
-" I use a unicode curly array with a <backslash><space>
-set showbreak=↪>\
-
 " set the color column (maximum line length visual)
-set colorcolumn=63
+set colorcolumn=64
 
 " show partially written commands
 set showcmd
 
 " set 5 lines to the cursor when moving vertically
 set so=5
+
+" enable custom statusline
+set laststatus=2
+set statusline=%t       "tail of the filename
+set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
+set statusline+=%{&ff}] "file format
+set statusline+=%h      "help file flag
+set statusline+=%m      "modified flag
+set statusline+=%r      "read only flag
+set statusline+=%y      "filetype
+set statusline+=%=      "left/right separator
+set statusline+=%c,     "cursor column
+set statusline+=%l/%L   "cursor line/total lines
+set statusline+=\ %P    "percent through file
+
+" make linebreaks nicer
+set breakindent
+set breakindentopt=sbr
+" I use a unicode curly array with a <backslash><space>
+set showbreak=↪>\
 
 " change cursor to line in insert mode
 if has("autocmd")

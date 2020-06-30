@@ -9,9 +9,6 @@ ln -s $HOME/.dotfiles/tmux.conf $HOME/.tmux.conf
 # install inputrc config file
 ln -s $HOME/.dotfiles/inputrc $HOME/.inputrc
 
-# install mutt config file
-ln -s $HOME/.dotfiles/muttrc $HOME/.muttrc
-
 # install nemo shortcut file
 mkdir -p $HOME/.gnome2/accels
 ln -s $HOME/.dotfiles/nemo $HOME/.gnome2/accels
