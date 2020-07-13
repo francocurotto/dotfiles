@@ -1,8 +1,10 @@
 ### Aliases
+alias g=git
+alias m=neomutt
 alias q=exit
 alias r=reset
-alias v=vim
 alias t=tmux
+alias v=vim
 
 ### nnn configutation
 n ()
