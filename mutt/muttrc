@@ -1,0 +1,93 @@
+#################
+# Personal Info #
+#################
+set from = "francocurotto@gmail.com"
+set realname = "Franco Curotto"
+
+###############
+# Credentials #
+###############
+set smtp_url = "smtps://francocurotto@smtp.gmail.com"
+set imap_user = "francocurotto@gmail.com"
+# get encrypted password
+source 'echo "$( pw=$( secret-tool lookup email francocurotto@gmail.com ); echo set imap_pass=\"$pw\"; echo set smtp_pass=\"$pw\" )" |'
+
+# Folders
+set folder = "imaps://imap.gmail.com/"
+set spoolfile = "+INBOX"
+#set record = "+[Gmail]/Sent Mail"
+#set postponed = "+[Gmail]/Drafts"
+#set trash = "+[Gmail]/Trash"
+
+# Where to put the stuff
+set header_cache = "~/.mutt/cache/headers"
+set message_cachedir = "~/.mutt/cache/bodies"
+set certificate_file = "~/.mutt/certificates"
+
+##########
+# Others #
+##########
+# set the best text editor
+set editor = "vim"
+# allow Mutt to open a new IMAP connection automatically
+unset imap_passive
+# ping imap server every X seconds to avoid disconnect
+set imap_keepalive = 300 
+# check new emails every seconds
+set mail_check = 120 
+# threads ordered together
+set sort=threads
+# top-down order of emails
+set sort_aux=reverse-date
+# smooth scrolling
+set menu_scroll 
+# see inbox while reading emails
+set pager_index_lines = 6 
+# enable sidebar
+#set sidebar_visible = yes
+# avoid sent copies
+set copy = no
+# set date format to display
+set date_format="%d-%b-%Y"
+# set index mail displaying format
+set index_format="%2C | %Z [%d] %-30.30F (%-4.4c) %s"
+# add colors from colors.muttrc file
+source colors.muttrc
+
+#############
+# View HTML #
+#############
+set mailcap_path = ~/.mutt/mailcap
+auto_view text/html # view html mails in w3m automatically
+
+
+##########
+# Remaps #
+##########
+bind index              l       display-message 
+bind index              <right> display-message 
+bind pager              k       previous-line 
+bind pager              j       next-line    
+bind pager              l       view-attachments    
+bind pager              <right> view-attachments    
+bind pager              g       top
+bind pager              G       bottom
+bind attach             l       view-attach
+bind attach             <right> view-attach
+bind pager,attach       h       exit            
+bind pager,attach       <left>  exit            
+bind attach,index       g       first-entry
+bind attach,index       G       last-entry
+bind attach,index,pager \CD     next-page
+bind attach,index,pager \CU     previous-page
+
+########################
+# Change folder macros #
+########################
+bind editor <space> noop # needed for folders with spaces
+macro index ñi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ña "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mails"
+macro index ñs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to sent mails"
+macro index ñe "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
+macro index ñd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
+macro index ñt "<change-folder>=[Gmail]/Trash<enter>" "Go to trash"

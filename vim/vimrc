@@ -131,6 +131,14 @@ set hlsearch
 " In search, move the cursor while typing
 set incsearch
 
+""""""""""""
+" Commands "
+""""""""""""
+" Use Silent to run commands without leaving vim
+command! -nargs=+ Silent
+\   execute 'silent <args>'
+\ | redraw!
+
 """""""""""""""""
 " Miscellaneous "
 """""""""""""""""
