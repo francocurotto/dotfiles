@@ -1,6 +1,9 @@
 """"""""""""
 " Commands "
 """"""""""""
+" Compilation
+command Tex write | :execute 'silent !pdflatex % &'
+
 " LaTeX
 command Article :read $HOME/.vim/ftplugin/tex/article.tex|normal kdd
 command -narg=1 Texenv :normal o\begin{<args>}<CR>\end{<args>}<ESC>k$
