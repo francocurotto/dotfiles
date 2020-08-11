@@ -38,9 +38,10 @@ set imap_keepalive = 300
 # check new emails every seconds
 set mail_check = 120 
 # threads ordered together
-set sort=threads
+#set sort=threads
+set sort=reverse-date
 # top-down order of emails
-set sort_aux=reverse-date
+#set sort_aux=reverse-date
 # smooth scrolling
 set menu_scroll 
 # see inbox while reading emails
@@ -69,6 +70,7 @@ bind pager              l       view-attachments
 bind pager              <right> view-attachments    
 bind pager              g       top
 bind pager              G       bottom
+bind pager              R       group-reply
 bind attach             l       view-attach
 bind attach             <right> view-attach
 bind pager,attach       h       exit            
