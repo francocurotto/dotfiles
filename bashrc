@@ -1,9 +1,9 @@
 ### Aliases
 alias g=git
-alias ipy=ipython3
+alias i=ipython3
 alias m=neomutt
 alias q=exit
-alias p=python
+alias p=python3
 alias r=reset
 alias t=tmux
 alias v=vim

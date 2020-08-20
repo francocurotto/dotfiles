@@ -34,7 +34,7 @@ set editor = "vim"
 # allow Mutt to open a new IMAP connection automatically
 unset imap_passive
 # ping imap server every X seconds to avoid disconnect
-set imap_keepalive = 300 
+set imap_keepalive = 900
 # check new emails every seconds
 set mail_check = 120 
 # threads ordered together
@@ -44,10 +44,6 @@ set sort=reverse-date
 #set sort_aux=reverse-date
 # smooth scrolling
 set menu_scroll 
-# see inbox while reading emails
-#set pager_index_lines = 6 
-# enable sidebar
-#set sidebar_visible = yes
 # avoid sent copies
 set copy = no
 # set date format to display
@@ -83,10 +79,11 @@ bind attach,index,pager \CU     previous-page
 ########################
 # Change folder macros #
 ########################
+bind index c noop # needed for binding c
 bind editor <space> noop # needed for folders with spaces
-macro index ñi "<change-folder>=INBOX<enter>" "Go to inbox"
-macro index ña "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mails"
-macro index ñs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to sent mails"
-macro index ñe "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
-macro index ñd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
-macro index ñt "<change-folder>=[Gmail]/Trash<enter>" "Go to trash"
+macro index ci "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ca "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mails"
+macro index cs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to sent mails"
+macro index ce "<change-folder>=[Gmail]/Starred<enter>" "Go to starred messages"
+macro index cd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
+macro index ct "<change-folder>=[Gmail]/Trash<enter>" "Go to trash"

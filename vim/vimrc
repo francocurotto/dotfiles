@@ -10,8 +10,8 @@ nnoremap <Down> gj
 nnoremap <Up> gk
 vnoremap <Down> gj
 vnoremap <Up> gk
-"inoremap <Down> <C-o>gj
-"inoremap <Up> <C-o>gk
+inoremap <Down> <C-o>gj
+inoremap <Up> <C-o>gk
 
 " use space to go to command mode
 nnoremap <Space> :
@@ -22,6 +22,9 @@ nnoremap <CR> o<Esc>
 " use <C-J> for leaving insert mode
 inoremap <C-J> <Esc>
 vnoremap <C-J> <Esc>
+
+" add delete without copy command
+nnoremap D "_d
 
 """""""""""
 " Visuals "
