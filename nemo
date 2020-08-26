@@ -1,10 +1,9 @@
-; nemo-desktop GtkAccelMap rc-file         -*- scheme -*-
+; nemo GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
 ; (gtk_accel_path "<Actions>/ShellActions/New Window" "<Primary>n")
 ; (gtk_accel_path "<Actions>/ShellActions/Sidebar List" "")
 ; (gtk_accel_path "<Actions>/ShellActions/File" "")
-; (gtk_accel_path "<Actions>/DesktopViewActions/Empty Trash Conditional" "")
 ; (gtk_accel_path "<Actions>/IconViewActions/Sort by Size" "")
 ; (gtk_accel_path "<Actions>/DirViewActions/OpenAlternate" "<Primary><Shift>o")
 ; (gtk_accel_path "<Actions>/DirViewActions/RenameSelectAll" "<Shift>F2")
@@ -33,7 +32,6 @@
 ; (gtk_accel_path "<Actions>/DirViewActions/Location Eject Volume" "")
 ; (gtk_accel_path "<Actions>/DirViewActions/Stop Volume" "")
 ; (gtk_accel_path "<Actions>/DirViewActions/LocationRestoreFromTrash" "")
-; (gtk_accel_path "<Actions>/DesktopViewActions/Show Desktop Overlay" "")
 ; (gtk_accel_path "<Actions>/ShellActions/Tab9" "<Alt>0")
 ; (gtk_accel_path "<Actions>/DirViewActions/Location Unmount Volume" "")
 ; (gtk_accel_path "<Actions>/DirViewActions/OpenAsRoot" "")

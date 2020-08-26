@@ -1,3 +1,7 @@
+" revert wrap sensitive remapping
+iunmap <Down>
+iunmap <Up>
+
 " Remove toolbar
 set guioptions-=T
 
