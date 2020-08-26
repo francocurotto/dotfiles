@@ -7,6 +7,11 @@ alias p=python3
 alias r=reset
 alias t=tmux
 alias v=vim
+# git aliases
+alias gs='git status'
+alias gaa='git add --all'
+alias gcm='git commit -m'
+alias gpom='git pull origin master'
 
 # Sources
 source $HOME/.dotfiles/nnn
