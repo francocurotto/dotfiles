@@ -11,7 +11,9 @@ alias v=vim
 alias gs='git status'
 alias gaa='git add --all'
 alias gcm='git commit -m'
+alias gcm.='git commit -m "."'
 alias gpom='git push origin master'
+alias gd='git diff'
 
 # Sources
 source $HOME/.dotfiles/nnn
