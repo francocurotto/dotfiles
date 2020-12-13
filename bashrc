@@ -1,7 +1,7 @@
 ### Aliases
 alias g=git
 alias i=ipython3
-alias m=neomutt
+alias m=mutt
 alias q=exit
 alias p=python3
 alias r=reset
