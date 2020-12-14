@@ -1,9 +1,7 @@
 ### Aliases
 alias g=git
-alias i=ipython3
 alias m=mutt
 alias q=exit
-alias p=python3
 alias r=reset
 alias t=tmux
 alias v=vim
@@ -14,6 +12,11 @@ alias gcm='git commit -m'
 alias gcm.='git commit -m "."'
 alias gpom='git push origin master'
 alias gd='git diff'
+# python aliases
+alias p=python3
+alias i=ipython3
+alias pip=pip3
+alias pd='p -m pudb'
 
 # Sources
 source $HOME/.dotfiles/nnn
