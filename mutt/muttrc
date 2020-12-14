@@ -26,6 +26,21 @@ set header_cache = "~/.mutt/cache/headers"
 set message_cachedir = "~/.mutt/cache/bodies"
 set certificate_file = "~/.mutt/certificates"
 
+###########
+# Sorting #
+###########
+# Thread sorting
+set sort="threads"
+set strict_threads="yes"
+# new mails in threads push to top in maillist
+set sort_browser="reverse-date"
+set sort_aux="reverse-last-date-received"
+# do not collapse threads
+unset collapse_unread
+# collapse keybinding
+bind index - collapse-thread
+bind index _ collapse-all
+
 ##########
 # Others #
 ##########
@@ -37,11 +52,6 @@ unset imap_passive
 set imap_keepalive = 900
 # check new emails every seconds
 set mail_check = 120 
-# threads ordered together
-#set sort=threads
-set sort=reverse-date
-# top-down order of emails
-#set sort_aux=reverse-date
 # smooth scrolling
 set menu_scroll 
 # avoid sent copies
@@ -49,10 +59,10 @@ set copy = no
 # set date format to display
 set date_format="%d-%b-%Y"
 # set index mail displaying format
-set index_format="%2C | %Z [%d] %-30.30F (%-4.4c) %s"
+set index_format="%3C | %Z %X [%d] %-30.30F (%-4.4c) %s"
 # add colors from colors.muttrc file
 source ~/.mutt/colors.muttrc
-# use terminal browser for htlm mails
+# use terminal browser for html mails
 set mailcap_path = ~/.mutt/mailcap
 auto_view text/html
 alternative_order text/plain text/html

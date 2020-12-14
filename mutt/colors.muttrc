@@ -11,6 +11,7 @@ color tree	red black
 
 color index	red black ~D
 color index	magenta black ~T
+color index brightwhite black ~N
 
 color header	brightgreen black ^From:
 color header	brightcyan black ^To:
