@@ -11,7 +11,9 @@ alias gaa='git add --all'
 alias gcm='git commit -m'
 alias gcm.='git commit -m "."'
 alias gpom='git push origin master'
+alias gpo='git push origin'
 alias gd='git diff'
+alias gp='git pull'
 # python aliases
 alias p=python3
 alias i=ipython3
