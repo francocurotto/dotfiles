@@ -59,7 +59,7 @@ set copy = no
 # set date format to display
 set date_format="%d-%b-%Y"
 # set index mail displaying format
-set index_format="%3C | %Z %X [%d] %-30.30F (%-4.4c) %s"
+set index_format="%3C | %Z [%d] %-30.30F (%-4.4c) %s"
 # add colors from colors.muttrc file
 source ~/.mutt/colors.muttrc
 # use terminal browser for html mails
