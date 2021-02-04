@@ -22,8 +22,3 @@ alias pd='p -m pudb'
 
 # Sources
 source $HOME/.dotfiles/nnn
-
-# Tilix Configuration
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi

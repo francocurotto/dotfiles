@@ -41,7 +41,7 @@ set wrap
 set linebreak
 
 " set the color column (maximum line length visual)
-set colorcolumn=64
+set colorcolumn=63
 
 " show partially written commands
 set showcmd
