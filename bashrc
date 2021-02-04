@@ -20,5 +20,8 @@ alias i=ipython3
 alias pip=pip3
 alias pd='p -m pudb'
 
+# diable goddamn flow control
+stty -ixon
+
 # Sources
 source $HOME/.dotfiles/nnn
