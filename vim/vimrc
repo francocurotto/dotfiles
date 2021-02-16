@@ -23,8 +23,9 @@ nnoremap <CR> o<Esc>
 inoremap <C-J> <Esc>
 vnoremap <C-J> <Esc>
 
-" add delete without copy command
-nnoremap D "_d
+" override delete/change so it does not copy
+nnoremap d "_d
+nnoremap c "_c
 
 """""""""""
 " Visuals "
