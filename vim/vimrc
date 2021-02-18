@@ -23,6 +23,12 @@ nnoremap <CR> o<Esc>
 inoremap <C-J> <Esc>
 vnoremap <C-J> <Esc>
 
+" separates yank copy and delete copy
+nnoremap p "0p
+nnoremap P "0P
+nnoremap gp "1p
+nnoremap gP "1P
+
 """""""""""
 " Visuals "
 """""""""""
