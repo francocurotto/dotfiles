@@ -1,20 +1,20 @@
 #/!bin/bash
 
 # install vim config folder
-ln -s $HOME/.dotfiles/vim $HOME/.vim
+ln -s -T $HOME/.dotfiles/vim $HOME/.vim
 
 # install tmux config file
-ln -s $HOME/.dotfiles/tmux.conf $HOME/.tmux.conf
+ln -s -T $HOME/.dotfiles/tmux.conf $HOME/.tmux.conf
 
 # install inputrc config file
-ln -s $HOME/.dotfiles/inputrc $HOME/.inputrc
+ln -s -T $HOME/.dotfiles/inputrc $HOME/.inputrc
 
 # install mutt config folder
-ln -s $HOME/.dotfiles/mutt $HOME/.mutt
+ln -s -T $HOME/.dotfiles/mutt $HOME/.mutt
 
 # install nemo shortcut file
 mkdir -p $HOME/.gnome2/accels
-ln -s $HOME/.dotfiles/nemo $HOME/.gnome2/accels
+ln -s -T $HOME/.dotfiles/nemo $HOME/.gnome2/accels
 
 # install bash configuration file. Intead of doing a ln -s
 # we opt to add source into a existing .bashrc given by the
