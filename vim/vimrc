@@ -23,10 +23,6 @@ nnoremap <CR> o<Esc>
 inoremap <C-J> <Esc>
 vnoremap <C-J> <Esc>
 
-" override delete/change so it does not copy
-nnoremap d "_d
-nnoremap c "_c
-
 """""""""""
 " Visuals "
 """""""""""
