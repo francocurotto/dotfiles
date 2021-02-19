@@ -24,4 +24,4 @@ alias pd='p -m pudb'
 stty -ixon
 
 # Sources
-source $HOME/.dotfiles/nnn
+source $HOME/dotfiles/nnn

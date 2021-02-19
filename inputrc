@@ -9,7 +9,7 @@ set vi-cmd-mode-string \1\e[2 q\2
 # remove delay when switching to normal mode
 set keyseq-timeout 0
 
-# use C-J to leave insert mode
+# use C-F to leave insert mode
 set keymap vi-insert
-"\C-J": vi-movement-mode
+"\C-F": vi-movement-mode
 
