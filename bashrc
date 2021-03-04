@@ -1,6 +1,6 @@
 ### Aliases
 alias g=git
-alias m=mutt
+#alias m=mutt
 alias q=exit
 alias r=reset
 alias t=tmux
