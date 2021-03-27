@@ -19,9 +19,9 @@ nnoremap <Space> :
 " use enter to add new blank lines
 nnoremap <CR> o<Esc>
 
-" use <C-F> for leaving insert mode
-inoremap <C-F> <Esc>
-vnoremap <C-F> <Esc>
+" use <A-F> (=đ in my keyboard) for leaving insert mode
+inoremap đ <Esc>
+vnoremap đ <Esc>
 
 """""""""""
 " Visuals "
