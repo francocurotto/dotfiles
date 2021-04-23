@@ -1,6 +1,5 @@
 ### Aliases
 alias g=git
-#alias m=mutt
 alias q=exit
 alias r=reset
 alias t=tmux
@@ -23,5 +22,5 @@ alias pd='p -m pudb'
 # diable goddamn flow control
 stty -ixon
 
-# Sources
+# sources
 source $HOME/dotfiles/nnn
