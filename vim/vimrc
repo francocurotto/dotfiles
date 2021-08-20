@@ -10,8 +10,10 @@ nnoremap <Down> gj
 nnoremap <Up> gk
 vnoremap <Down> gj
 vnoremap <Up> gk
-inoremap <Down> <C-o>gj
-inoremap <Up> <C-o>gk
+inoremap <Down> <C-O>gj
+inoremap <Up> <C-O>gk
+nnoremap <C-W> <C-W><C-W>
+inoremap <C-W> <Esc><C-W><C-W>i
 
 " use space to go to command mode
 nnoremap <Space> :
