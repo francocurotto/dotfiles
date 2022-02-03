@@ -1,29 +1,8 @@
 """"""""""""""
 " Remappings "
 """"""""""""""
-" remap up and down to be wrapped-line sensitive 
-nnoremap j gj
-nnoremap k gk
-vnoremap j gj
-vnoremap k gk
-nnoremap <Down> gj
-nnoremap <Up> gk
-vnoremap <Down> gj
-vnoremap <Up> gk
-inoremap <Down> <C-O>gj
-inoremap <Up> <C-O>gk
-nnoremap <C-W> <C-W><C-W>
-inoremap <C-W> <Esc><C-W><C-W>i
-
 " use space to go to command mode
 nnoremap <Space> :
-
-" use enter to add new blank lines
-nnoremap <CR> o<Esc>
-
-" use <A-F> (=đ in my keyboard) for leaving insert mode
-inoremap đ <Esc>
-vnoremap đ <Esc>
 
 """""""""""
 " Visuals "
@@ -34,10 +13,6 @@ colorscheme torte
 
 " display line number
 set number
-
-" wrap by line
-set wrap
-set linebreak
 
 " set the color column (maximum line length visual)
 set colorcolumn=63
@@ -61,12 +36,6 @@ set statusline+=%=      "left/right separator
 set statusline+=%c,     "cursor column
 set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
-
-" make linebreaks nicer
-set breakindent
-set breakindentopt=sbr
-" I use a unicode curly array with a <backslash><space>
-set showbreak=+
 
 " change cursor to line in insert mode
 if has("autocmd")
@@ -132,14 +101,6 @@ set smartcase
 set hlsearch
 " In search, move the cursor while typing
 set incsearch
-
-""""""""""""
-" Commands "
-""""""""""""
-" Use Silent to run commands without leaving vim
-command! -nargs=+ Silent
-\   execute 'silent <args>'
-\ | redraw!
 
 """""""""""""""""
 " Miscellaneous "
