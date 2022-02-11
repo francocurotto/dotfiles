@@ -3,6 +3,7 @@
 """"""""""""""
 " use space to go to command mode
 nnoremap <Space> :
+vnoremap <Space> :
 
 """""""""""
 " Visuals "
