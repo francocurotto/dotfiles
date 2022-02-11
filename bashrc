@@ -13,11 +13,6 @@ alias gpo='git push origin'
 alias gpom='git push origin master'
 alias gd='git diff'
 alias gp='git pull'
-# python aliases
-alias p=python3
-alias i=ipython3
-alias pip=pip3
-alias pd='p -m pudb'
 
 # diable goddamn flow control
 stty -ixon
