@@ -14,7 +14,7 @@ alias gpom='git push origin master'
 alias gd='git diff'
 alias gp='git pull'
 
-# diable goddamn flow control
+# disable goddamn flow control
 stty -ixon
 
 # sources
