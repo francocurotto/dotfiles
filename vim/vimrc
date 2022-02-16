@@ -21,6 +21,9 @@ set showcmd
 " set 5 lines to the cursor when moving vertically
 set so=5
 
+" smooth horizontal scroll
+set sidescroll=1
+
 " enable custom statusline
 set laststatus=2
 set statusline=%t       "tail of the filename
