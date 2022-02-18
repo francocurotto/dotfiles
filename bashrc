@@ -1,10 +1,10 @@
 ### Aliases
-alias g=git
 alias q=exit
 alias r=reset
 alias t=tmux
 alias v=vim
 # git aliases
+alias g=git
 alias gs='git status'
 alias gaa='git add --all'
 alias gcm='git commit -m'
@@ -14,10 +14,7 @@ alias gpom='git push origin master'
 alias gd='git diff'
 alias gp='git pull'
 # python aliases
-alias p=python3
-alias i=ipython3
-alias pip=pip3
-alias pd='p -m pudb'
+alias p=python
 
 # diable goddamn flow control
 stty -ixon

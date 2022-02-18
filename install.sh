@@ -9,10 +9,6 @@ ln -s -T $HOME/dotfiles/tmux.conf $HOME/.tmux.conf
 # install inputrc config file
 ln -s -T $HOME/dotfiles/inputrc $HOME/.inputrc
 
-# install nemo shortcut file
-mkdir -p $HOME/.gnome2/accels
-ln -s -T $HOME/dotfiles/nemo $HOME/.gnome2/accels/nemo
-
 # install bash configuration file. Intead of doing a ln -s
 # we opt to add source into a existing .bashrc given by the
 # distribution
