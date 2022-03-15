@@ -1,10 +1,10 @@
 ### Aliases
-alias g=git
 alias q=exit
 alias r=reset
 alias t=tmux
 alias v=vim
 # git aliases
+alias g=git
 alias gs='git status'
 alias gaa='git add --all'
 alias gcm='git commit -m'

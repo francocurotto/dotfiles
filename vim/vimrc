@@ -16,6 +16,9 @@ colorscheme torte
 " display line number
 set number
 
+" wrap lines on words
+set linebreak
+
 " show partially written commands
 set showcmd
 
