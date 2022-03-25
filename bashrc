@@ -3,7 +3,7 @@ alias q=exit
 alias r=reset
 alias t=tmux
 alias v=vim
-alias g='grep -r'
+alias g='grep -ri'
 # git aliases
 alias gs='git status'
 alias gaa='git add --all'
