@@ -13,6 +13,8 @@ alias gpo='git push origin'
 alias gpom='git push origin master'
 alias gd='git diff'
 alias gp='git pull'
+# python aliases
+alias p="python"
 
 # disable goddamn flow control
 stty -ixon
