@@ -16,6 +16,9 @@ colorscheme torte
 " display line number
 set number
 
+" start file unwrapped
+set nowrap
+
 " wrap lines on words
 set linebreak
 
