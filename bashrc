@@ -1,8 +1,10 @@
 ### aliases
 alias q=exit
 alias r=reset
+alias c=clear
 alias t=tmux
 alias v=vim
+alias s='ssh -X'
 alias g='grep -ri'
 # git aliases
 alias gs='git status'
@@ -15,6 +17,9 @@ alias gd='git diff'
 alias gp='git pull'
 # python aliases
 alias p="python"
+# apt aliases
+alias sau='sudo apt update'
+alias sag='sudo apt upgrade'
 
 # disable goddamn flow control
 stty -ixon
