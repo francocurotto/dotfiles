@@ -20,6 +20,9 @@ alias p="python"
 # apt aliases
 alias sau='sudo apt update'
 alias sag='sudo apt upgrade'
+alias sai='sudo apt install'
+alias sap='sudo apt purge'
+alias as='apt search'
 
 # disable goddamn flow control
 stty -ixon
