@@ -7,7 +7,7 @@ alias v=vim
 alias s='ssh -X'
 alias g='grep -ri'
 # git aliases
-alias gs='git status'
+alias gs='git status -u'
 alias gaa='git add --all'
 alias gcm='git commit -m'
 alias gcm.='git commit -m "."'
