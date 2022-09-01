@@ -7,7 +7,7 @@ alias v=vim
 alias s='ssh -X'
 alias g='grep -ri'
 # git aliases
-alias gs='git status'
+alias gs='git status -u'
 alias gaa='git add --all'
 alias gcm='git commit -m'
 alias gcm.='git commit -m "."'
@@ -17,12 +17,6 @@ alias gd='git diff'
 alias gp='git pull'
 # python aliases
 alias p="python"
-# apt aliases
-alias sau='sudo apt update'
-alias sag='sudo apt upgrade'
-alias sai='sudo apt install'
-alias sap='sudo apt purge'
-alias as='apt search'
 
 # disable goddamn flow control
 stty -ixon
