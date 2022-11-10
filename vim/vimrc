@@ -4,7 +4,19 @@
 " use space to go to command mode
 nnoremap <Space> :
 vnoremap <Space> :
+
+" use , to toggle line wrap
 nnoremap , :set wrap!<ENTER>
+
+" move up/down visual lines instead of actual lines
+nnoremap j gj
+nnoremap k gk
+nnoremap <DOWN> gj
+nnoremap <UP> gk
+vnoremap j gj
+vnoremap k gk
+vnoremap <DOWN> gj
+vnoremap <UP> gk
 
 """""""""""
 " Visuals "

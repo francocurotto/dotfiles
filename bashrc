@@ -15,6 +15,7 @@ alias gpo='git push origin'
 alias gpom='git push origin master'
 alias gd='git diff'
 alias gp='git pull'
+alias glo='git log --oneline'
 # python aliases
 alias p="python"
 alias i="ipython3"
