@@ -17,6 +17,7 @@ alias gd='git diff'
 alias gp='git pull'
 # python aliases
 alias p="python"
+alias i="ipython3"
 
 # disable goddamn flow control
 stty -ixon
