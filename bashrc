@@ -30,3 +30,8 @@ fi
 
 # sources
 source $HOME/dotfiles/nnn
+
+# local source
+if [ -f ~/.bashrc_local ]; then
+    . ~/.bashrc_local
+fi
