@@ -23,8 +23,8 @@ alias i="ipython3"
 # disable goddamn flow control
 stty -ixon
 
-# start tmux TODO: check if tmux is installed
-if ! [ -n "$TMUX" ]; then
+# start tmux if installed and not running
+if [ -x "$(command -v tmux)" ] && ! [ -n "$TMUX" ]; then
     tmux
 fi
 

@@ -10,4 +10,8 @@ ln -sf $HOME/dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sf $HOME/dotfiles/inputrc $HOME/.inputrc
 
 # install bashrc
-ln -sf $HOME/dotfiles/bashrc $HOME/.bash_aliases
+if [ ! -f $HOME/.bashrc ]; then # case termux
+    ln -sf $HOME/dotfiles/bashrc $HOME/.bashrc
+elif [ ! -f $HOME/.bashrc ]; then # case mint
+    ln -sf $HOME/dotfiles/bashrc $HOME/.bash_aliases
+fi
