@@ -22,11 +22,6 @@ alias i="ipython3"
 # disable goddamn flow control
 stty -ixon
 
-# start tmux if installed and not running
-if [ -x "$(command -v tmux)" ] && ! [ -n "$TMUX" ]; then
-    tmux
-fi
-
 # sources
 source $HOME/dotfiles/nnn
 
