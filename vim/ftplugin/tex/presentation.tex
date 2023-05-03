@@ -4,16 +4,27 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{emoji}
 
-\usetheme{Madrid}
+% remove navigation
 \beamertemplatenavigationsymbolsempty
+
+% nice itemize and enumerate bullets
 \setbeamertemplate{itemize items}[default]
 \setbeamertemplate{enumerate items}[default]
+
+% add current/total number of slides
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
 
 \title{}
 \author{Franco Curotto}
 \institute{}
-%\date{}
+\date{\today}
 
 \begin{document}
 \frame{\titlepage}

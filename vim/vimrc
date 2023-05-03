@@ -4,6 +4,7 @@
 " use space to go to command mode
 nnoremap <Space> :
 vnoremap <Space> :
+inoremap <C-j> <Esc>
 
 " use , to toggle line wrap
 nnoremap , :set wrap!<ENTER>
