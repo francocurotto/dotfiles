@@ -18,6 +18,8 @@ alias glo='git log --oneline'
 # python aliases
 alias p="python"
 alias i="ipython3"
+# virualenv picker alias
+alias venv=". $HOME/dotfiles/venv-picker.sh"
 
 # disable goddamn flow control
 stty -ixon
