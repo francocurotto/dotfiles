@@ -20,6 +20,8 @@ alias p="python"
 alias i="ipython3"
 # virualenv picker alias
 alias venv=". $HOME/dotfiles/venv-picker.sh"
+# Xilinx aliases
+alias vivado="/tools/Xilinx/Vivado/2023.2/bin/./vivado -nolog -nojournal"
 
 # disable goddamn flow control
 stty -ixon
