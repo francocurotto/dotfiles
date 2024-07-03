@@ -22,7 +22,6 @@ alias i="ipython3"
 alias venv=". $HOME/dotfiles/venv-picker.sh"
 # Xilinx aliases
 alias source-vivado="source /tools/Xilinx/Vivado/2022.1/settings64.sh;"
-alias run-vivado="vivado -nolog -nojournal"
 # Calan aliases
 alias rfsoc="qemu-system-x86_64 -enable-kvm -m 24G -drive file=/media/franco/Storage/RFSoC/rfsoc_vm.qcow2,media=disk,if=virtio -display sdl"
 
