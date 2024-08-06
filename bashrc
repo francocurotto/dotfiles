@@ -22,6 +22,7 @@ alias i="ipython3"
 alias venv=". $HOME/dotfiles/venv-picker.sh"
 # Calan aliases
 alias rfsoc="qemu-system-x86_64 -enable-kvm -m 24G -drive file=/media/franco/Storage/RFSoC/rfsoc_vm.qcow2,media=disk,if=virtio -display sdl"
+alias roach="qemu-system-x86_64 -enable-kvm -m 24G -drive file=/media/franco/Storage/ROACH/roach_vm.qcow2,media=disk,if=virtio -display sdl"
 
 # disable goddamn flow control
 stty -ixon
