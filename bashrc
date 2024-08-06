@@ -4,7 +4,7 @@ alias c=clear
 alias t=tmux
 alias v=vim
 alias s='ssh -X'
-alias g='grep -ri'
+alias g='grep --recursive --ignore-case'
 # git aliases
 alias gs='git status -u'
 alias gaa='git add --all'
