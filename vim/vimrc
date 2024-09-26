@@ -24,7 +24,7 @@ vnoremap <UP> gk
 """""""""""
 " set color scheme
 syntax on
-colorscheme torte
+colorscheme desert
 
 " display line number
 set number
