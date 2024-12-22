@@ -46,6 +46,9 @@ set so=5
 " smooth horizontal scroll
 set sidescroll=1
 
+" disable offset when horizontal scrolling
+set sidescrolloff=1
+
 " enable custom statusline
 set laststatus=2
 set statusline=%t       "tail of the filename
