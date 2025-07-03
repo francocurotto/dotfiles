@@ -4,7 +4,6 @@
 " use space to go to command mode
 nnoremap <Space> :
 vnoremap <Space> :
-inoremap <C-j> <Esc>
 
 " use , to toggle line wrap
 nnoremap , :set wrap!<ENTER>
@@ -46,6 +45,9 @@ set so=5
 
 " smooth horizontal scroll
 set sidescroll=1
+
+" disable offset when horizontal scrolling
+set sidescrolloff=1
 
 " enable custom statusline
 set laststatus=2
