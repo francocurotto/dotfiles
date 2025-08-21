@@ -49,6 +49,10 @@ set sidescroll=1
 " disable offset when horizontal scrolling
 set sidescrolloff=1
 
+" make tabs and.trails visible
+set list
+set listchars=tab:▸\ 
+
 " enable custom statusline
 set laststatus=2
 set statusline=%t       "tail of the filename
@@ -78,7 +82,6 @@ endif
 " remove delay when switching to normal mode
 set ttimeout
 set ttimeoutlen=1
-set listchars=tab:>-,trail:~,extends:>,precedes:<,space:.
 set ttyfast
 
 " underline spelling mistakes
