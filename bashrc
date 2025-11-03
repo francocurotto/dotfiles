@@ -25,6 +25,9 @@ alias firefox-work=". $HOME/dotfiles/firefox-work"
 alias rfsoc="qemu-system-x86_64 -enable-kvm -m 24G -drive file=/media/franco/Storage/RFSoC/rfsoc_vm.qcow2,media=disk,if=virtio -display sdl"
 alias roach="qemu-system-x86_64 -enable-kvm -m 24G -drive file=/media/franco/Storage/ROACH/roach_vm.qcow2,media=disk,if=virtio -display sdl"
 
+# set helix the default editor
+export EDITOR=hx
+
 # disable goddamn flow control
 stty -ixon
 
