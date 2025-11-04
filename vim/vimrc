@@ -5,10 +5,6 @@
 nnoremap <Space> :
 vnoremap <Space> :
 
-" don't leave normal mode when inserting a newline
-nnoremap o o<Esc>
-nnoremap O O<Esc>
-
 " use , to toggle line wrap
 nnoremap , :set wrap!<ENTER>
 
