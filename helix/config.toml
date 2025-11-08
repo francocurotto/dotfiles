@@ -1,0 +1,3 @@
+[keys.normal]
+"ñ" = "command_mode"
+"{" = ":toggle soft-wrap"
