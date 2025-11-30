@@ -18,20 +18,6 @@ vnoremap k gk
 vnoremap <DOWN> gj
 vnoremap <UP> gk
 
-" delete commands copy to a different register than default
-nnoremap d "dd
-nnoremap D "dD
-nnoremap c "dc
-nnoremap C "dC
-nnoremap x "dx
-nnoremap s "ds
-xnoremap d "dd
-xnoremap D "dD
-xnoremap c "dc
-xnoremap C "dC
-xnoremap x "dx
-xnoremap s "ds
-
 """""""""""
 " Visuals "
 """""""""""
@@ -111,7 +97,7 @@ hi SpellCap cterm=underline ctermfg=blue
 set clipboard=unnamedplus
 
 " bash style autocomplete
-set wildmode=longest,list 
+set wildmode=longest,list
 
 " set working directory to the current file
 if @% != ""
