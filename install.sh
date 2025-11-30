@@ -3,6 +3,9 @@
 # install vim config folder
 ln -sfT $HOME/dotfiles/vim $HOME/.vim
 
+# install neovim config folder
+ln -sfT $HOME/dotfiles/nvim $HOME/.config/nvim
+
 # install tmux config file
 ln -sf $HOME/dotfiles/tmux.conf $HOME/.tmux.conf
 
