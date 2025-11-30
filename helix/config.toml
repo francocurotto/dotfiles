@@ -1,3 +1,0 @@
-[keys.normal]
-"ñ" = "command_mode"
-"{" = ":toggle soft-wrap" # not implemented by helix
