@@ -2,7 +2,7 @@
 alias q=exit
 alias c=clear
 alias t=tmux
-alias v=vim
+alias v=nvim
 alias s='ssh -X'
 alias g='grep --recursive --ignore-case'
 # git aliases
