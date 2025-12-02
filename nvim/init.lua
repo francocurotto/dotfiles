@@ -32,6 +32,9 @@ vim.opt.number = true
 -- make file unwrapped at first
 vim.opt.wrap = false
 
+-- add marker to wrapped lines
+vim.opt.showbreak = "↳ "
+
 -- make 5 lines of offset when scrolling vertically
 vim.opt.scrolloff = 5
 
