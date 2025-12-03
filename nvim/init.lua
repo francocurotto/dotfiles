@@ -7,21 +7,14 @@ vim.keymap.set({"n","v"}, "<Space>", ":", { noremap = true })
 -- Set "," to toggle line wrap
 vim.keymap.set({"n","v"}, ",", function()
   vim.wo.wrap = not vim.wo.wrap
-  if vim.wo.wrap then
-    -- Wrapped line movement
-    vim.keymap.set({"n", "v"}, "j", "gj", { buffer = true })
-    vim.keymap.set({"n", "v"}, "k", "gk", { buffer = true })
-    vim.keymap.set({"n", "v"}, "<Down>", "gj", { buffer = true })
-    vim.keymap.set({"n", "v"}, "<Up>", "gk", { buffer = true })
-  else
-    -- Normal movement
-    vim.keymap.set({"n", "v"}, "j", "j", { buffer = true })
-    vim.keymap.set({"n", "v"}, "k", "k", { buffer = true })
-    vim.keymap.set({"n", "v"}, "<Down>", "j", { buffer = true })
-    vim.keymap.set({"n", "v"}, "<Up>", "k", { buffer = true })
-  end
   print("Wrap: " .. (vim.wo.wrap and "ON" or "OFF"))
 end, { desc = "Toggle line wrap" })
+
+-- make vertical movement wrap sensitive
+vim.keymap.set({"n", "v"}, "j", "gj", { buffer = true })
+vim.keymap.set({"n", "v"}, "k", "gk", { buffer = true })
+vim.keymap.set({"n", "v"}, "<Down>", "gj", { buffer = true })
+vim.keymap.set({"n", "v"}, "<Up>", "gk", { buffer = true })
 
 -------------
 -- Visuals --
@@ -44,7 +37,7 @@ vim.opt.scrolloff = 5
 -- make tabs and trail spaces visible
 vim.opt.list = true
 vim.opt.listchars = {
-  tab = "⇥ ",      -- shows a right arrow for tabs
+  tab = "⇥ ",     -- shows a right arrow for tabs
   trail = "␣",    -- bucket for trailing spaces
   extends = "▶",
   precedes = "◀"
