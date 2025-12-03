@@ -27,7 +27,7 @@ end, { desc = "Toggle line wrap" })
 -- Visuals --
 -------------
 -- change color scheme
-vim.cmd("colorscheme desert")
+vim.cmd("colorscheme sorbet")
 
 -- display number lines
 vim.opt.number = true
