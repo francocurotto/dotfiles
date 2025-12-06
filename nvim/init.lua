@@ -20,7 +20,7 @@ vim.keymap.set({"n", "v"}, "<Up>", "gk", { buffer = true })
 -- Visuals --
 -------------
 -- change color scheme
-vim.cmd("colorscheme sorbet")
+vim.cmd("colorscheme desert")
 
 -- display number lines
 vim.opt.number = true
