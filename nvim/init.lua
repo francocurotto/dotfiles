@@ -31,6 +31,9 @@ vim.opt.wrap = false
 -- add marker to wrapped lines
 vim.opt.showbreak = "↳ "
 
+-- make wrap cuts on words
+vim.opt.linebreak = true
+
 -- make 5 lines of offset when scrolling vertically
 vim.opt.scrolloff = 5
 
