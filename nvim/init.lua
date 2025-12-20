@@ -31,13 +31,16 @@ vim.opt.wrap = false
 -- add marker to wrapped lines
 vim.opt.showbreak = "↳ "
 
+-- make wrap cuts on words
+vim.opt.linebreak = true
+
 -- make 5 lines of offset when scrolling vertically
 vim.opt.scrolloff = 5
 
 -- make tabs and trail spaces visible
 vim.opt.list = true
 vim.opt.listchars = {
-  tab = "⇥ ",     -- shows a right arrow for tabs
+  tab = "» ",     -- shows a right arrow for tabs
   trail = "␣",    -- bucket for trailing spaces
   extends = "▶",
   precedes = "◀"
