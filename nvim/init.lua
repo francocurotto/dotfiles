@@ -1,10 +1,10 @@
 ----------------
 -- Remmapings --
 ----------------
--- Space goes to command mode in normal and visual
+-- space goes to command mode in normal and visual
 vim.keymap.set({"n","v"}, "<Space>", ":", { noremap = true })
 
--- Set "," to toggle line wrap
+-- set "," to toggle line wrap
 vim.keymap.set({"n","v"}, ",", function()
   vim.wo.wrap = not vim.wo.wrap
   print("Wrap: " .. (vim.wo.wrap and "ON" or "OFF"))
