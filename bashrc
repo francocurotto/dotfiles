@@ -31,3 +31,6 @@ export VISUAL=nvim
 
 # sources
 source $HOME/dotfiles/nnn
+
+# Calan scripts
+export PATH="$HOME/pCloudDrive/Work/Scripts:$PATH"
