@@ -33,7 +33,6 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 # sources
-source $HOME/dotfiles/nnn
 source $HOME/dotfiles/nnn.sh
 
 # Calan scripts
