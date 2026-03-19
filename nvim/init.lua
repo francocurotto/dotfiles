@@ -29,7 +29,7 @@ vim.opt.number = true
 vim.opt.wrap = false
 
 -- add marker to wrapped lines
-vim.opt.showbreak = "↳ "
+vim.o.statuscolumn = "%=%{v:virtnum>0?'↪ ':' '}%l "
 
 -- make wrap cuts on words
 vim.opt.linebreak = true
